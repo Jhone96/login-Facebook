@@ -1,0 +1,172 @@
+@charset "UFT-8";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-principal);
+}
+:root{
+    --fonte-principal: "Roboto Condensed", sans-serif; 
+    --cor-principal: #F2F4F7;
+    --cor-segundaria: #1877f2;
+    --cor_terciaria:#42B72A;
+    --cor-texto: #1C1E21;
+    --cor-rodape: #FFFF;
+}
+
+
+.conteiner{
+    height: 100vh;
+    display: flex;
+    
+
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    gap: 50px;
+
+}
+.conteiner__facebook{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+   
+    max-width: 400px;
+    height: 300px;
+   
+}
+.imagem{
+    margin-bottom: 50px;
+   
+}
+.form__conteiner{
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+    max-width: 400px;
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.145);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 4px rgba(0, 0, 0, 0.092);
+   background-color: var(--cor-rodape);
+}
+.login__conteiner{
+   
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+
+}
+.form__conteiner > input{
+   
+    width: 90%;
+    height: 40px;
+     margin: 5px;
+    padding: 6px;
+
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.101);
+    
+   
+}
+.botao__login{
+    width: 90%;
+    height: 40px;
+   
+    font-size: 22px ;
+    color: var(--cor-principal);
+    background-color: var(--cor-segundaria);
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    
+}
+.texto{
+   
+    margin: 10px;
+    color: var(--cor-segundaria);
+    text-decoration: none;
+    
+}
+.botao__criar{
+    width: 90%;
+    height: 40px;
+    background-color: var(--cor_terciaria);
+    color: var(--cor-rodape);
+    margin-top: 30px;
+    border: 1px solid transparent;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.rodape{
+    background-color: var(--cor-rodape);
+    color: #1C1E21;
+
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    border: 2px solid rgba(0, 0, 0, 0.078);
+    box-shadow: 4px rgba(0, 0, 0, 0.63);
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 8px;
+
+   
+    list-style: none;
+  
+  }  
+    
+.rodape > li > a{
+    text-decoration: none;
+    margin: 0 5px;
+    color: var(--cor-texto)
+}
+.pagina{
+    margin: 20px;
+    
+}
+
+
+.pagina {
+    text-decoration: none;
+    color: var(--cor-texto);
+    
+}
+ .botao__login:hover{
+    background-color: #237ef4eb;
+    transition: 1s;
+ }
+ .botao__criar:hover{
+    background-color: green;
+ }
+ .texto:hover{
+    text-decoration:underline;
+ }
+ @media (max-width: 1000px) {
+    .conteiner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        
+    }
+    .conteiner__facebook{
+        margin-top: 10%;
+    }
+
+ }
+
